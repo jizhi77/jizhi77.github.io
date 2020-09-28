@@ -134,37 +134,37 @@ comment:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
     # "Afdian.net" donate button configurations
-    -
-        type: afdian
+    #-
+        #type: afdian
         # URL to the "Afdian.net" personal page
-        url: ''
+        #url: ''
     # Alipay donate button configurations
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: '/images/alipay.png'
+        qrcode: '/images/QRCode/alipay.png'
     # "Buy me a coffee" donate button configurations
     -
         type: buymeacoffee
         # URL to the "Buy me a coffee" page
         url: ''
     # Patreon donate button configurations
-    -
-        type: patreon
+    #-
+        #type: patreon
         # URL to the Patreon page
-        url: ''
+        #url: ''
     # Paypal donate button configurations
-    -
-        type: paypal
+    #-
+        #type: paypal
         # Paypal business ID or email address
-        business: ''
+        #business: ''
         # Currency code
-        currency_code: USD
+        #currency_code: USD
     # Wechat donate button configurations
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: ''
+        qrcode: '/images/QRCode/wechat.jpg'
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 #share:
