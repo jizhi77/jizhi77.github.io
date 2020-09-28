@@ -1,4 +1,4 @@
-title: Zero`s House
+title: Zero`s 博客
 subtitle: 在孤独中，一个人要像一支队伍
 description: ''
 keywords: null
@@ -61,5 +61,6 @@ include: null
 exclude: null
 ignore: null
 theme: icarus
+excerpt_length: 100
 deploy:
   type: ''
