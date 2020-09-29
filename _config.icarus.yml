@@ -256,23 +256,23 @@ widgets:
         position: right
         type: tags
     # Google FeedBurner email subscription widget configurations
-    -
+    #-
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: subscribe_email
+        #position: left
+        #type: subscribe_email
         # Hint text under the email input
-        description:
+        #description:
         # Feedburner ID
-        feedburner_id: ''
+        #feedburner_id: ''
     # Google AdSense unit configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
         type: adsense
         # AdSense client ID
-        client_id: ''
+        client_id: 'ca-pub-3005184471488517'
         # AdSense AD unit ID
-        slot_id: ''
+        slot_id: '1234'
 # Plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
 plugins:
@@ -284,7 +284,7 @@ plugins:
     # https://tongji.baidu.com
     baidu_analytics:
         # Baidu Analytics tracking ID
-        tracking_id: 39c0fa34ad7b1193212d1fd95391d891
+        tracking_id: a49b9139b3cfa045eca3ed2e2974d5e7
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
     busuanzi: false
@@ -326,4 +326,4 @@ providers:
     # Name or URL template of the webfont CDN provider
     fontcdn: google
     # Name or URL of the fontawesome icon font CDN provider
-    iconcdn: fontawesome
+    iconcdn: 'https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css'
