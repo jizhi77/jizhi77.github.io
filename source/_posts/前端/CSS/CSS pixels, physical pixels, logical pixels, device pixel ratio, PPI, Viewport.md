@@ -1,0 +1,36 @@
+---
+title: CSS pixels, physical pixels, logical pixels, device pixel ratio, PPI, Viewport
+toc: true
+categories: [前端, CSS]
+---
+
+1. css 像素：px
+1. 物理像素：pt（设备像素）
+1. 分辨率
+1. 像素比：dpr-device pixel ratio （1px = dpr^2 * 1pt）
+1. 设备独立像素：dip-device independent pixel（又称逻辑像素）
+1. ppi：pixel per inch（每一英寸拥有的像素数）像素密度，衡量单位面积内的拥有像素值的情况
+1. retina 显示屏
+
+
+<br />
+<br />疑问：
+
+1. 为什么 iOS 有@1、@2、@3 的区别？
+
+
+
+<a name="eHVP7"></a>
+## 1. PX
+
+<br />像素，为显示影像的基本单位。译自 `pixel` ， `pixel` 为 `picture element` 的缩写。像素是相对单位。<br />
+
+<a name="QaAhG"></a>
+## 2. DP
+物理像素， `device pixel` 。顾名思义，物理意义上的点阵集，单位是 PT，是绝对单位，即每个屏幕的物理像素是固定的。<br />
+<br />
+
+<a name="874a5816"></a>
+## 分辨率
+
+
