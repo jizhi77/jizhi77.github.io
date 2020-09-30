@@ -1,7 +1,7 @@
 ---
 title: Q&A
 toc: true
-categories: [JavaScript]
+categories: [前端, JavaScript]
 ---
 <a name="J1Icj"></a>
 ## 待解答
