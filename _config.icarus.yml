@@ -284,7 +284,7 @@ plugins:
     # https://tongji.baidu.com
     baidu_analytics:
         # Baidu Analytics tracking ID
-        tracking_id: a49b9139b3cfa045eca3ed2e2974d5e7
+        tracking_id: 77b4904a0b4adbe73b2a5fdbe4ffd8fa
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
     busuanzi: false
