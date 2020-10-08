@@ -108,7 +108,7 @@ article:
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
         fold: unfolded
     # Whether to show estimated article reading time
-    readtime: true
+    readtime: false
     # Article licensing block
     licenses:
         Creative Commons:
@@ -144,10 +144,10 @@ donates:
         # Alipay qrcode image URL
         qrcode: '/images/QRCode/alipay.png'
     # "Buy me a coffee" donate button configurations
-    -
-        type: buymeacoffee
+    #-
+        #type: buymeacoffee
         # URL to the "Buy me a coffee" page
-        url: ''
+        #url: 'https://www.buymeacoffee.com/icu999'
     # Patreon donate button configurations
     #-
         #type: patreon
@@ -177,7 +177,7 @@ sidebar:
     # Left sidebar configurations
     left:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls
