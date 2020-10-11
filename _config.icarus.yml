@@ -123,13 +123,27 @@ article:
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
-    type: baidu
+    type: insight
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-    type: disqus
+    type: gitalk
+    client_id: 1950706e478263648038
+    client_secret: 9fd9221ac720105c8db2ce582fb82015b3d6a38c
+    repo: jizhi77.github.io
+    owner: jizhi77
+    admin:
+        - jizhi77
+    per_page: 20                    # 可选填
+    distraction_free_mode: false    # 可选填
+    pager_direction: last           # 可选填
+    create_issue_manually: false    # 可选填
+    proxy:                          # 可选填
+    flip_move_options:              # 可选填
+    enable_hotkey: true             # 可选填
+    language: zh-CN                 # 可选填
     # Disqus shortname
-    shortname: 'jizhi77'
+    # shortname: 'jizhi77'
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -177,7 +191,7 @@ sidebar:
     # Left sidebar configurations
     left:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: true
+        sticky: false
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls
@@ -193,7 +207,7 @@ widgets:
         # Author name
         author: Zero
         # Author title
-        author_title: A GitHub Octocat
+        author_title: 前端开发
         # Author's current location
         location: HangZhou, China
         # URL or path to the avatar image
@@ -205,36 +219,36 @@ widgets:
         # URL or path for the follow button
         follow_link: 'https://github.com/jizhi77'
         # Links to be shown on the bottom of the profile widget
-        social_links:
-            Github:
-                icon: fab fa-github
-                url: 'https://github.com/jizhi77'
-            Facebook:
-                icon: fab fa-facebook
-                url: 'https://facebook.com'
-            Twitter:
-                icon: fab fa-twitter
-                url: 'https://twitter.com'
-            Dribbble:
-                icon: fab fa-dribbble
-                url: 'https://dribbble.com'
-            RSS:
-                icon: fas fa-rss
-                url: /
+        #social_links:
+            #Github:
+                #icon: fab fa-github
+                #url: 'https://github.com/jizhi77'
+            #Facebook:
+                #icon: fab fa-facebook
+                #url: 'https://facebook.com'
+            #Twitter:
+                #icon: fab fa-twitter
+                #url: 'https://twitter.com'
+            #Dribbble:
+                #icon: fab fa-dribbble
+                #url: 'https://dribbble.com'
+            #RSS:
+                #icon: fas fa-rss
+                #url: /
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
         type: toc
     # Recommendation links widget configurations
-    -
+    #-
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: links
+        #position: left
+        #type: links
         # Names and URLs of the sites
-        links:
-            Hexo: 'https://hexo.io'
-            Bulma: 'https://bulma.io'
+        #links:
+            #Hexo: 'https://hexo.io'
+            #Bulma: 'https://bulma.io'
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -317,7 +331,7 @@ plugins:
     # http://outdatedbrowser.com/
     outdated_browser: true
     # Show a progress bar at top of the page on page loading
-    progressbar: true
+    progressbar: false
 # CDN provider settings
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:

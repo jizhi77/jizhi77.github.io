@@ -2,6 +2,7 @@
 title: State
 toc: true
 categories: [前端, React, 关注点]
+tags: [React]
 ---
 
 关于 `setState()` 你应该了解三件事：<br />
