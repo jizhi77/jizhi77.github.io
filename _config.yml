@@ -61,6 +61,6 @@ include: null
 exclude: null
 ignore: null
 theme: icarus
-excerpt_length: 80
+excerpt_length: 250
 deploy:
   type: ''

@@ -2,6 +2,9 @@
 title: CSS pixels, physical pixels, logical pixels, device pixel ratio, PPI, Viewport
 toc: true
 categories: [前端, CSS]
+tags: [CSS]
+date: 2019-01-02 10:19:45
+cover: /images/covers/4.webp
 ---
 
 1. css 像素：px
