@@ -2,6 +2,9 @@
 title: webpack 配置
 toc: true
 categories: [前端, Vue, CLI]
+tags: [Vue]
+date: 2019-04-28 08:09:12
+cover: /images/covers/16.webp
 ---
 
 因为 `@vue/cli-service` 对 webpack 配置进行了抽象，如果想修改或者添加部分 webpack 的配置，可通过以下几种方式：<br />

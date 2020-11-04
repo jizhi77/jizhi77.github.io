@@ -2,6 +2,9 @@
 title:  Vue 和 React
 toc: true
 categories: [前端, 所思所想]
+tags: [前端-杂谈]
+date: 2018-09-18 08:09:12
+cover: /images/covers/19.webp
 ---
 
 ## 为什么 React 比 Vue 火

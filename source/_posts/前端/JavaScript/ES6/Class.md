@@ -2,6 +2,9 @@
 title: Class
 toc: true
 categories: [前端, JavaScript, ES6]
+tags: [ES6]
+date: 2019-11-09 08:09:12
+cover: /images/covers/8.webp
 ---
 
 <a name="ZVg4Q"></a>

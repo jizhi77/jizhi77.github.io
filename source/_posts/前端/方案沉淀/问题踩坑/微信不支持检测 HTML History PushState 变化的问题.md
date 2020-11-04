@@ -2,6 +2,9 @@
 title:  微信不支持检测 HTML History PushState 变化的问题
 toc: true
 categories: [前端, 方案沉淀, 问题踩坑]
+tags: [问题踩坑]
+date: 2019-09-22 08:09:12
+cover: /images/covers/28.webp
 ---
 
 ### 问题描述

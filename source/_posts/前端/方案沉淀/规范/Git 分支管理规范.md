@@ -2,6 +2,9 @@
 title:  Git 分支管理规范
 toc: true
 categories: [前端, 规范]
+tags: [规范]
+date: 2018-05-10 08:09:12
+cover: /images/covers/23.webp
 ---
 ## 1.流程
 ![A8F24363B9FA1D4218AAC95A23A5BCB0.jpg](https://cdn.nlark.com/yuque/0/2020/jpeg/85733/1590135939279-e5cb9b27-4677-435b-a0dd-73f14ce45ea8.jpeg#align=left&display=inline&height=1660&margin=%5Bobject%20Object%5D&name=A8F24363B9FA1D4218AAC95A23A5BCB0.jpg&originHeight=1660&originWidth=2066&size=468446&status=done&style=none&width=2066)

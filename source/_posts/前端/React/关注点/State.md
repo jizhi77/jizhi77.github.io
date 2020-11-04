@@ -3,6 +3,8 @@ title: State
 toc: true
 categories: [前端, React, 关注点]
 tags: [React]
+date: 2019-05-06 08:09:12
+cover: /images/covers/15.webp
 ---
 
 关于 `setState()` 你应该了解三件事：<br />
