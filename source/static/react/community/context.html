@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Hello World</title>
+    <script src="../libs/react@17.production.min.js"></script>
+    <script src="../libs/react-dom@17.production.min.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+    const {useState} = React
+
+    const Context = React.createContext({})
+
+    const GrandPa = () => {
+        let [theme, setTheme] = useState('red')
+
+        return (
+            <Context.Provider value={
+                {
+                    theme: theme,
+                    updateTheme: (val) => {
+                        setTheme(val)
+                    }
+                }
+            }>
+                <div className="grandpa" style={{color: theme}}>
+                    <h2>Grandpa组件颜色值：{name}</h2>
+                    <Parent/>
+                </div>
+            </Context.Provider>
+        )
+    }
+
+    const Parent = () => {
+        return (
+            <Context.Consumer>
+                {(context) => {
+                    return (
+                        <div className="parent" style={{color: context.theme}}>
+                            <h3>父组件颜色值：{context.theme}</h3>
+                            <Child/>
+                        </div>
+                    )
+                }}
+            </Context.Consumer>
+        )
+    }
+
+    const Child = () => {
+        return (
+            <Context.Consumer>
+                {(context) => {
+                    return (
+                        <div className="child" style={{color: context.theme}}>
+                            <h4>子组件颜色值：{context.theme}</h4>
+                            <input type="text" onInput={(e) => {
+                                context.updateTheme(e.target.value)
+                            }}/>
+                        </div>
+                    )
+                }}
+            </Context.Consumer>
+        )
+    }
+
+    ReactDOM.render(
+        <GrandPa/>,
+        document.getElementById('root')
+    );
+
+</script>
+<!--
+  Note: this page is a great way to try React but it's not suitable for production.
+  It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+  Read this section for a production-ready setup with JSX:
+  https://reactjs.org/docs/add-react-to-a-website.html#add-jsx-to-a-project
+
+  In a larger project, you can use an integrated toolchain that includes JSX instead:
+  https://reactjs.org/docs/create-a-new-react-app.html
+
+  You can also use React without JSX, in which case you can remove Babel:
+  https://reactjs.org/docs/react-without-jsx.html
+-->
+</body>
+</html>
