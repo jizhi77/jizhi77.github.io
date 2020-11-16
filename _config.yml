@@ -1,4 +1,4 @@
-title: 亦凡的博客
+title: 意木的博客
 subtitle: 在孤独中，一个人要像一支队伍
 description: ''
 keywords: null
@@ -61,6 +61,10 @@ include: null
 exclude: null
 ignore: null
 theme: icarus
-excerpt_length: 250
+excerpt_length: 200
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 deploy:
   type: ''
