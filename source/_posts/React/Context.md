@@ -26,6 +26,14 @@ thumbnail: /images/covers/33.webp
 
 那么此时就可以考虑使用`Context` 这个特性了。
 
+## API
+
+- `React.createContext`
+- `Context.Provider`
+- `Context.Consumer`
+- `Context.displayName`
+- `class.contextType`
+
 ## 使用姿势
 
 ### 姿势一
@@ -235,11 +243,11 @@ class Child extends Component {
 export default Child
 ```
 
-```jsx SecondChild.js
+```jsx SecondChild1.js (class 形式的 contextType)
 import React, { Component } from "react";
 import { ThemeContext } from './res/Context'
 
-class SecondChild extends Component {
+class SecondChild1 extends Component {
 
     static contextType = ThemeContext
 
@@ -249,7 +257,7 @@ class SecondChild extends Component {
                 {
                     val => {
                         return (
-                            <div className="secondChildWrap">
+                            <div className="secondChild1Wrap">
                                 SecondChild 组件的主题色<span style={{ color: this.context }}>{val}</span>
                             </div>
                         )
@@ -263,6 +271,25 @@ class SecondChild extends Component {
 export default SecondChild
 ```
 
+
+```jsx SecondChild2.js (function 形式的 useContext)
+import React, { useContext } from "react";
+import { ThemeContext } from './res/Context'
+
+function SecondChild2() {
+
+    const context = useContext(ThemeContext)
+
+    return (
+        <div className="secondChildWrap">
+            SecondChild2 组件的主题色<span style={{ color: context }}>{context}</span>
+        </div>
+    )
+}
+
+export default SecondChild2
+```
+
 **总结**
 
 <div class="notification is-info">
@@ -274,12 +301,138 @@ export default SecondChild
 </ol>
 </div>
 
-## 高阶玩法
+## 高阶
+
+### 动态更新
+
+```jsx 提供 Context 容器
+import React from "react";
+export const ThemeContext = React.createContext('red')
+```
+
+```jsx Provider 提供值和值更新函数
+import React, { Component } from 'react'
+import { ThemeContext } from './context'
+import Son from './Son'
+
+class DynamicContext extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            theme: 'light'
+        }
+    }
+
+    toggleTheme = (theme) => {
+        this.setState({ theme })
+    }
+    render() {
+
+        return (
+            <ThemeContext.Provider value={{
+                theme: this.state.theme,
+                toggle: (val) => this.toggleTheme(val)
+            }}>
+                <Son />
+            </ThemeContext.Provider>
+        )
+    }
+}
+
+export default DynamicContext
+```
+
+```jsx 调用
+import React, { Component } from "react";
+import {ThemeContext} from './context'
+
+export default class GrandSon extends Component {
+
+    static contextType = ThemeContext
+
+    render() {
+        return (
+            <div>
+                <p>主题色为：{this.context.theme}</p>
+                <button onClick={() => {
+                    if (this.context.theme === 'light') {
+                        this.context.toggle('dark')
+                    }
+
+                    if (this.context.theme === 'dark') {
+                        this.context.toggle('light')
+                    }
+                }}>修改主题</button>
+            </div>
+        )
+    }
+}
+```
 
 ### 多引用
 
-TODO
+```jsx Provider
+import React, { Component } from 'react'
+import { ThemeContext, UserContext } from './context'
+import Son from './Son'
+
+class DynamicContext extends Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        return (
+            <ThemeContext.Provider value={'dark'}>
+                <UserContext.Provider value={'小明'}>
+                    <Son />
+                </UserContext.Provider>
+            </ThemeContext.Provider>
+        )
+    }
+}
+
+export default DynamicContext
+```
+
+
+```jsx
+import React, { Component } from "react";
+import { ThemeContext, UserContext } from './context'
+
+export default class GrandSon extends Component {
+
+    render() {
+        return (
+            <ThemeContext.Consumer>
+                {theme => {
+                    return (
+                        <UserContext.Consumer>
+                            {user => {
+                                return (
+                                    <div>
+                                        <p>当前主题色：{theme}</p>
+                                        <p>当前用户：{user}</p>
+                                    </div>
+                                )
+
+                            }}
+                        </UserContext.Consumer>
+                    )
+                }}
+            </ThemeContext.Consumer>
+        )
+    }
+}
+```
+
+声明创建多个 Context 容器，然后通过提供多个 Provider 并用多个 Consumer 进行消费。
+> 个人理解这种写法并不是好的实践。
 
 ## 防坑
 
-TODO
+Context 使用参考标识来决定何时进行渲染，当 Provider 重新渲染（Provider 的 value 属性改变）时，Provider 的子组件也会触发渲染。
+
+[官网说明](https://zh-hans.reactjs.org/docs/context.html#caveats)
+[参考文章](https://zhuanlan.zhihu.com/p/50336226)
