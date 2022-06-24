@@ -56,15 +56,6 @@
   </url>
   
   <url>
-    <loc>http://icu999.cn/2017/03/05/CSS/%E5%B1%9E%E6%80%A7/Flex/</loc>
-    
-    <lastmod>2022-06-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://icu999.cn/2019/01/02/CSS/%E7%9F%A5%E8%AF%86%E7%82%B9/%E5%83%8F%E7%B4%A0%E4%B9%8B%E8%AF%B4/</loc>
     
     <lastmod>2022-06-24</lastmod>
@@ -282,6 +273,15 @@
   
   <url>
     <loc>http://icu999.cn/about.html</loc>
+    
+    <lastmod>2022-06-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://icu999.cn/2017/03/05/CSS/%E5%B1%9E%E6%80%A7/Flex/</loc>
     
     <lastmod>2022-06-24</lastmod>
     
