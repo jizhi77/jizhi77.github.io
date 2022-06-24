@@ -8,14 +8,7 @@ toc: true
 thumbnail: /images/covers/34.webp
 ---
 
-<article class="message is-info">
-  <div class="message-header">
-    <p>引言</p>
-  </div>
-  <div class="message-body">
-    Refs 提供了一种方式，允许我们访问 DOM 节点或子组件实例
-  </div>
-</article>
+>  Refs 提供了一种方式，允许我们访问 DOM 节点或子组件实例
 
 ## 缘由
 
