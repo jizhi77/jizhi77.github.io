@@ -60,7 +60,7 @@ pagination_dir: page
 include: null
 exclude: null
 ignore: null
-theme: xoxo
+theme: xoxo-plus
 excerpt_length: 200
 sitemap:
   path: sitemap.xml
@@ -95,6 +95,6 @@ google_analytics: XXX
 baidu_analytics: FuckUBaidu
 
 #footer
-index_page: https://blog.0xff000000.com
-main_site: https://0xff000000.com
-github: https://github.com/KevinOfNeu
+index_page: https://blog.r2fe.cn
+main_site: https://r2fe.cn
+github: https://github.com/jizhi77
