@@ -2178,18 +2178,6 @@ hexo-cli@^3.0.0:
     resolve "^1.11.0"
     tildify "^2.0.0"
 
-hexo-component-inferno@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.npmmirror.com/hexo-component-inferno/-/hexo-component-inferno-0.14.0.tgz#ee5a99877559c3f92b4d4ace89e791bd812b1a3b"
-  integrity sha512-vjy9TVrcT5xFH7il3v6oav9iAxatIAklkQYiUorVVLQBKz4HDluPGw/xYLJ/fITsIm7jPezv7O5QL5AcLGpgwg==
-  dependencies:
-    ajv "^6.10.2"
-    inferno "^7.3.3"
-    inferno-create-element "^7.3.3"
-    js-yaml "^3.13.1"
-    moment "^2.24.0"
-    semver "^7.1.1"
-
 hexo-component-inferno@^0.8.2:
   version "0.8.2"
   resolved "https://registry.npmmirror.com/hexo-component-inferno/-/hexo-component-inferno-0.8.2.tgz#782ad15c384da0938d594e022cd540978cbb29cf"
@@ -2382,18 +2370,6 @@ hexo-server@^2.0.0:
     morgan "^1.9.1"
     open "^7.0.0"
     serve-static "^1.14.1"
-
-hexo-theme-icarus@^4.1.1:
-  version "4.5.0"
-  resolved "https://registry.npmmirror.com/hexo-theme-icarus/-/hexo-theme-icarus-4.5.0.tgz#5cad3655201c5e353cd6e0c6a3ea03024a1bec23"
-  integrity sha512-U8HUegt6JRGIXW4nwyyd5N1MlG4htgSrkUvWSHfMnr5Mq/u/uevrAPZkgYvWdnO/hAQY5xJQJ6+YiUcGc51sAg==
-  dependencies:
-    deepmerge "^4.2.2"
-    hexo-component-inferno "^0.14.0"
-    inferno "^7.3.3"
-    inferno-create-element "^7.3.3"
-    moment "^2.22.2"
-    semver ">=5.0.0"
 
 hexo-util@^0.6.3:
   version "0.6.3"
@@ -3641,13 +3617,6 @@ semver@7.0.0:
   resolved "https://registry.npmmirror.com/semver/-/semver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"
   integrity sha512-+GB6zVA9LWh6zovYQLALHwv5rb2PHGlJi3lfiqIHxR0uuwCgefcOJc59v9fv1w8GbStwxuuqqAjI9NMAOOgq1A==
 
-semver@>=5.0.0, semver@^7.1.1:
-  version "7.3.7"
-  resolved "https://registry.npmmirror.com/semver/-/semver-7.3.7.tgz#12c5b649afdbf9049707796e22a4028814ce523f"
-  integrity sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g==
-  dependencies:
-    lru-cache "^6.0.0"
-
 semver@^5.6.0:
   version "5.7.1"
   resolved "https://registry.npmmirror.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
@@ -3657,6 +3626,13 @@ semver@^6.1.1, semver@^6.1.2, semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.npmmirror.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
+
+semver@^7.1.1:
+  version "7.3.7"
+  resolved "https://registry.npmmirror.com/semver/-/semver-7.3.7.tgz#12c5b649afdbf9049707796e22a4028814ce523f"
+  integrity sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g==
+  dependencies:
+    lru-cache "^6.0.0"
 
 send@0.18.0:
   version "0.18.0"

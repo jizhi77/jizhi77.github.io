@@ -1,0 +1,1 @@
+scp -r public root@101.43.65.168:/var/www/r2fe/blog
